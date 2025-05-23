@@ -16,6 +16,7 @@ boton.addEventListener("click", () => {
     const areaRectangulo = B.value * C.value;
     const areaTOTAL = areaRectangulo + areaTriangulo;
 
+    //validaciones de los campos (opcionales)
     if (A.value === "" || B.value === "" || C.value === "") {
         alert("Debes ingresar valores en los 3 campos")
 
@@ -25,6 +26,7 @@ boton.addEventListener("click", () => {
         textoResultado.innerHTML = "El area de su terreno es: " + areaTOTAL;
     }
 
+    //los campos vuelven a estar vacios
     A.value = "";
     B.value = "";
     C.value = "";
